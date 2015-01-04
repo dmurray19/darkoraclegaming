@@ -1,12 +1,6 @@
 <% provide(:title, "Help") %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %> | Dark Oracle Gaming</title>
-  </head>
-  <body>
-    <h1>Help</h1>
-    <p>
+<h1>Help</h1>
+<p>
 <b>Server IPs:</b>
 
 CS:GO Minigames - minigames.darkoraclegaming.com
@@ -20,6 +14,4 @@ ts3.darkoraclegaming.com
 <b>Steam Group:</b>
 
 steamcommunity.com/groups/darkoraclegaming
-    </p>
-  </body>
-</html>
+</p>

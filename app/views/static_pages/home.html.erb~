@@ -2,7 +2,7 @@
   <h1>Dark Oracle Gaming</h1>
   <h2>
     This is the home page for the 
-    <a href="#">Dark Oracle Gaming</a>website. 
+    <a href="#">Dark Oracle Gaming </a>website.<br> 
     This site is currently in development.
   </h2>
   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
