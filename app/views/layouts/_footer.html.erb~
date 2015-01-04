@@ -1,0 +1,12 @@
+<footer class="footer">
+  <small>
+    Dark Oracle Gaming | Powered by <a href="http://rubyonrails.org/">Ruby on Rails</a>.
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to "About",   'static_pages#about' %></li>
+      <li><%= link_to "Contact", 'static_pages#contact' %></li>
+      <li><a href="http://darkoraclegaming.com/forums/viewforum.php?f=10&sid=4af11d9bc9302fb8c6dd240ad08d97f3">News</a></li>
+    </ul>
+  </nav>
+</footer>
