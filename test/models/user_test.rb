@@ -3,9 +3,9 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
 
   def setup
-    @user = User.new(name: "Example User", 
-                     email: "user@example.com", 
-                     password: "foobar", 
+    @user = User.new(name: "Example User",
+                     email: "user@example.com",
+                     password: "foobar",
                      password_confirmation: "foobar")
   end
 
@@ -26,13 +26,13 @@ class UserTest < ActiveSupport::TestCase
   test "name should not be too long" do
     @user.name = "a" * 51
     assert_not @user.valid?
-  end	
+  end
 
   test "email should not be too long" do
     @user.email = "a" * 256
     assert_not @user.valid?
   end
-	
+
   test "email validation should accept valid addresses" do
     valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org first.last@foo.jp alice+bob@baz.cn]
     valid_addresses.each do |valid_address|
@@ -60,8 +60,8 @@ class UserTest < ActiveSupport::TestCase
     @user.password = @user.password_confirmation = "a" * 5
     assert_not @user.valid?
   end
-  
+
   test "authenticated? should return false for a user with nil digest" do
-    assert_not @user.authenticated?('')
+    assert_not @user.authenticated?(:remember, '')
   end
 end
