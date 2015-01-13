@@ -1,3 +1,12 @@
+$body-bg:                        #000;
+$jumbotron-bg:                   #222;
+$input-bg:                       #222;
+$dropdown-bg:                    #444;
+$dropdown-link-color:            #aaa;
+$dropdown-link-hover-color:      #ccc;
+$dropdown-link-hover-bg:         #000;
+$btn-primary-color:              #000;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -9,6 +18,10 @@ $gray-medium-light: #eaeaea;
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
+}
+
+.pagination {
+ color: #000;
 }
 
 /* universal */
@@ -73,7 +86,7 @@ p {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 0px;
   font-weight: bold;
 }
 
